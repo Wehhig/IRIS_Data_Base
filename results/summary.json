@@ -1,0 +1,92 @@
+{
+  "device": "cpu",
+  "repeats": 10,
+  "binary": {
+    "pair": [
+      "versicolor",
+      "virginica"
+    ],
+    "results": [
+      {
+        "train_frac": 0.8,
+        "test_size": 20,
+        "final_test_acc": 1.0,
+        "final_test_loss": 0.08548665046691895
+      },
+      {
+        "train_frac": 0.7,
+        "test_size": 30,
+        "final_test_acc": 0.9666666547457378,
+        "final_test_loss": 0.10376683572928111
+      },
+      {
+        "train_frac": 0.6,
+        "test_size": 40,
+        "final_test_acc": 0.975,
+        "final_test_loss": 0.13278902769088746
+      }
+    ]
+  },
+  "mlp": {
+    "hidden_list": [
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "sweep": [
+      {
+        "H": 2,
+        "mean_test_acc": 0.949999988079071,
+        "std_test_acc": 0.04533823952078819
+      },
+      {
+        "H": 4,
+        "mean_test_acc": 0.9466665983200073,
+        "std_test_acc": 0.03999999538064003
+      },
+      {
+        "H": 8,
+        "mean_test_acc": 0.9466665983200073,
+        "std_test_acc": 0.042687490582466125
+      },
+      {
+        "H": 16,
+        "mean_test_acc": 0.9333332777023315,
+        "std_test_acc": 0.03651484102010727
+      },
+      {
+        "H": 32,
+        "mean_test_acc": 0.9299999475479126,
+        "std_test_acc": 0.05044248327612877
+      },
+      {
+        "H": 64,
+        "mean_test_acc": 0.9333332777023315,
+        "std_test_acc": 0.03944052755832672
+      }
+    ],
+    "best_H": 2,
+    "best_mean_test_acc": 0.949999988079071,
+    "best_std_test_acc": 0.04533823952078819,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        0,
+        10
+      ]
+    ]
+  }
+}
